@@ -45,7 +45,7 @@ if [ $storage -ge $size ] ; then
 	done
 	
 	#delete nginx log file 
-	service nginx stop
+	/sbin/service nginx stop
 	
 	echo " nginx is stop !" >> $deletelog
 
@@ -58,7 +58,7 @@ if [ $storage -ge $size ] ; then
 	
 	sleep 10s	
 
-	service nginx start
+	/sbin/service nginx start
 	echo " nginx is start ! " >> $deletelog	
 fi
-
+echo " deleteDialog is end ! " >> $deletelog 
