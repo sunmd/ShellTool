@@ -19,7 +19,7 @@ tomcatlogfile2="localhost_access_log"
 deletelog="/var/log/deleteDialog.log"
 
 echo " deleteDialog is beagin ! storage is $storage " >> $deletelog
-echo " ---------`date +%Y_%M_%D`---------" >> $deletelog 
+echo " ---------`date +%Y_%m_%d`---------" >> $deletelog 
 
 # check df , the size of storage more than size
 if [ $storage -ge $size ] ; then 
